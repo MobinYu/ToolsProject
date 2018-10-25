@@ -3,8 +3,8 @@ package com.yu.model;
 public class User {
 	
 	private String id;
-	private String age;
 	private String name;
+	private int age;
 	
 	
 	
@@ -12,7 +12,7 @@ public class User {
 		super();
 	}
 
-	public User(String id, String age, String name) {
+	public User(String id, int age, String name) {
 		super();
 		this.id = id;
 		this.age = age;
@@ -25,10 +25,10 @@ public class User {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public String getName() {

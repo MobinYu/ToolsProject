@@ -27,7 +27,9 @@ private static List<User> userList = new ArrayList<User>();
             while (rs.next()) {
                 User enterprise = new User();
                 enterprise.setId(rs.getString(1));
-                enterprise.setAge(rs.getString(2));
+                if (null != rs.getString(2)){
+                	enterprise.setAge(Integer.valueOf(rs.getString(2)));
+                }
                 enterprise.setName(rs.getString(3));
                 
                 userList.add(enterprise);
