@@ -15,10 +15,8 @@ import com.yu.toolMethod.ObjectListDuplicateRemove;
  * Hello world!
  *
  */
-public class App
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
         System.out.println( "Hello World!" );
         
         //1、火星坐标系 (GCJ-02)转为百度坐标系 (BD-09)

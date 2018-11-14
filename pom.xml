@@ -60,5 +60,17 @@
         <version>2.1.7</version>
     </dependency>
     
+    <!-- word生成 -->
+    <dependency>
+        <groupId>com.aspose</groupId>
+        <artifactId>aspose-words</artifactId>
+        <version>15.11.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.mlsc</groupId>
+        <artifactId>aspose-cells</artifactId>
+        <version>8.3.1</version>
+    </dependency>
+    
   </dependencies>
 </project>
