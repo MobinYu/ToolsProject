@@ -6,7 +6,13 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.Charset;
 
-public class BIOServer {
+/**
+ * BIO同步阻塞IO
+ * （1是串行版本，2、3是多线程版本）
+ * @author Super Yu
+ *
+ */
+public class BIOServer1 {
 	
 	private static Charset charset = Charset.forName("UTF-8");
 	
@@ -16,13 +22,13 @@ public class BIOServer {
 			ServerSocket ss = new ServerSocket(port);
 			
 			while(true) {
-				//接收链接
+				//接收链接（等待客户端连接时，阻塞）
 				Socket s = ss.accept();
 				
 				BufferedReader reader = new BufferedReader(new InputStreamReader(s.getInputStream(), charset));
 				
 				String mess = null;
-				//接收数据
+				//接收数据（等待客户端发送数据时，阻塞）
 				while ((mess = reader.readLine()) != null) {
 					System.out.println(mess);
 				}
@@ -31,7 +37,7 @@ public class BIOServer {
 			}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 

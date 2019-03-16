@@ -7,7 +7,7 @@ public class ThreadMMDemo {
 	public static void main(String[] args) {
 		final CountDownLatch cd1 = new CountDownLatch(1);
 		try {
-			Thread.sleep(20000L);
+			Thread.sleep(20000L); //20秒休眠后 再创建线程
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -17,7 +17,7 @@ public class ThreadMMDemo {
 				
 				public void run() {
 					try {
-						cd1.await();
+						cd1.await(); //阻塞
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}

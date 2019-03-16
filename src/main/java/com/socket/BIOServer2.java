@@ -20,6 +20,7 @@ public class BIOServer2 {
 				//接收链接
 				Socket s = ss.accept();
 				
+				//新开一个线程去处理这个连接
 				new Thread(new ScoketProcess(s)).start();
 			}
 			
