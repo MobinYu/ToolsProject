@@ -12,6 +12,8 @@ public class DataType {
 		testString();
 		
 		testDataType();
+		
+		testChange();
 	}
 
 	private static void testString() {
@@ -60,9 +62,27 @@ public class DataType {
 		
 		float f1 = (float) d1;
 		
-		System.out.println((int)cc);
+		System.out.println((int)cc); //得到字符的char值
 		System.out.println(d1);
 		System.out.println(f1);
+	}
+	
+	//char+字符+string转换
+	private static void testChange(){
+		String str = "abc321好";
+		char[] c = str.toCharArray();
+		
+		String ss = String.valueOf(c);
+		
+		
+		//数字（ASCII码） <--> 字符
+		int A = 65;
+		char c1 = (char)A;
+		
+		char c2 = 'A';
+		int A2 = (int)'A';
+		
+		
 	}
 
 }
