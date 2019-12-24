@@ -1,4 +1,4 @@
-package com.study.selfannotation;
+package com.study.annotation.self;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

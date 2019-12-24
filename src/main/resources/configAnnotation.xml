@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id = "myDao" class="com.example.demo.study.MyDao" />
+    <bean id = "myDao1" class="com.example.demo.study.MyDao1" />
+    <bean id = "myDao2" class="com.example.demo.study.MyDao2" />
+    <bean id = "myAnnService" class ="com.example.demo.study.MyAnnServiceImpl" />
+</beans>

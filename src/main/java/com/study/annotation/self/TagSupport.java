@@ -1,4 +1,4 @@
-package com.study.selfannotation;
+package com.study.annotation.self;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

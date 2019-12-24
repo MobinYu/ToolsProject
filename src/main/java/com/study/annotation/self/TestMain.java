@@ -1,4 +1,4 @@
-package com.study.selfannotation;
+package com.study.annotation.self;
 
 
 public class TestMain {
