@@ -1,0 +1,12 @@
+<html>
+	<p>
+		Netty核心类:
+		1、ServerBootstrap: 负责服务端的配置与启动
+		2、Bootstrap: 负责客户端的配置与启动
+		3、ChannelHandler：过滤器模式对netty中入站和出站数据进行处理
+	</p>
+	
+	<p>
+		
+	</p>
+</html>
