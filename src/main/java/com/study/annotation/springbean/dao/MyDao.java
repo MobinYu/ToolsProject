@@ -1,4 +1,4 @@
-package com.study.annotation.dao;
+package com.study.annotation.springbean.dao;
 
 /**
  * @Description: 要注入的DAo类

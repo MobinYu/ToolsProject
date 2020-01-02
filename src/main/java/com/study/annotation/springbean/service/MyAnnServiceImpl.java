@@ -1,9 +1,9 @@
-package com.study.annotation.service;
+package com.study.annotation.springbean.service;
 
-import com.study.annotation.dao.MyDao;
-import com.study.annotation.dao.MyDao1;
-import com.study.annotation.dao.MyDao2;
 import com.study.annotation.springbean.MyAnnotation;
+import com.study.annotation.springbean.dao.MyDao;
+import com.study.annotation.springbean.dao.MyDao1;
+import com.study.annotation.springbean.dao.MyDao2;
 
 /**
  * @Description: 带有注解的服务

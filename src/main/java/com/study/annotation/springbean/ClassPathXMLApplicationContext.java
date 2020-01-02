@@ -15,6 +15,8 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
+import com.study.annotation.springbean.service.MyAnnServiceImpl;
+
 public class ClassPathXMLApplicationContext {
 
 	Logger log = Logger.getLogger(ClassPathXMLApplicationContext.class);
