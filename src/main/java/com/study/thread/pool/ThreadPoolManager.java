@@ -65,19 +65,19 @@ public class ThreadPoolManager implements ThreadPool {
     @Override
     public void execute(Runnable task) {
         synchronized (taskQueue) {
-        	taskQueue.add(task);
-        	taskQueue.notifyAll();
-		}
+            taskQueue.add(task);
+            taskQueue.notifyAll();
+        }
     }
 
     @Override
     public void execute(Runnable[] tasks) {
-    	execute(Arrays.asList(tasks));
+        execute(Arrays.asList(tasks));
     }
 
     @Override
     public void execute(List<Runnable> tasks) {
-    	synchronized (taskQueue) {
+        synchronized (taskQueue) {
             for (Runnable task : tasks) {
                  taskQueue.add(task);
             }
@@ -102,7 +102,7 @@ public class ThreadPoolManager implements ThreadPool {
 
     @Override
     public void destroy() {
-    	while (!taskQueue.isEmpty()) {
+        while (!taskQueue.isEmpty()) {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {

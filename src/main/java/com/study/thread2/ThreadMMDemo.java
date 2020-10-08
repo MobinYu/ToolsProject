@@ -1,7 +1,10 @@
-package com.study.io;
+package com.study.thread2;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * jvm内存测试
+ */
 public class ThreadMMDemo {
 
 	public static void main(String[] args) {
@@ -17,7 +20,7 @@ public class ThreadMMDemo {
 				
 				public void run() {
 					try {
-						cd1.await(); //阻塞
+						cd1.await(); //阻塞，让5000个线程同时存在
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}

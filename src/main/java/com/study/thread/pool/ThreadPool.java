@@ -9,8 +9,8 @@ import java.util.List;
  *
  */
 public interface ThreadPool {
-	
-	// 执行单个线程任务
+
+    // 执行单个线程任务
     void execute(Runnable task);
 
     // 执行多个任务
